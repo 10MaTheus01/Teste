@@ -1,303 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Itim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <link rel="icon" href="img/leaf.png" sizes="16x16" type="img/jpg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>OutPolution</title>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
 </head>
-
 <body>
 
-    <!-- Cabecalho -->
-
-    <header>
-
-        <nav class="logo">
-            <a href="home.html"><img src="img/OutPolution logo site.png" alt="Logo"></a>
-        </nav>
-        <div class="pesquisa">
-            <input type="text" name="pesquisa" id="pesquisa">
-        </div>
-        <nav class="menu">
-            <a href="perfil.html"><img src="img/perfil.png" alt="conta"></a>
-            <a href="favoritos.html"><img src="img/icon favoritos.png" alt="favoritos"></a>
-            <a href="carrinho.html"><img src="img/carrinho.png" alt="compras"></a>
-        </nav>
-
-    </header>
-
-    <div class="menu-pai">
-    <div class="menu-dois">
-        <div class="menu-home" style="background-color: #99ff0059;"> 
-            <a href="home.html"> Home </a>
-        </div>
-        <div class="sports-menu">
-            <a href="categorias-sports.html"> Sports </a>
-        </div>
-
-        <div class="casuais-menu"> 
-            <a href="categorias-casuais.html"> Casuais </a>
-        </div>
-        <div class="snickers-menu">
-            <a href="categorias-snkrs.html"> Snickers </a>
-        </div>
-        <div class="sobre-nos-menu">
-            <a href="oquesomos-sobrenos.html"> Sobre Nós </a>
-        </div>
-        <div class="lojas-fisicas-menu">
-            <a href="lojas.html"> Lojas Físicas </a>
-        </div>
-
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
     </div>
 
-    <!-- icon zap -->
-
-    <section class="zap">
-        <div class="radius-caixa">
-          <img src="img/whatsapp.png" alt="ícone do WhatsApp" class="icone">
-          <div class="conteudo">
-            <div class="header">
-              <div class="titulo">
-                <img src="img/leaf.png" alt="ícone pequeno" class="icone-pequeno">
-                OutPolution
-              </div>
-            </div>
-            <div class="mensagem">
-              <div class="texto-mensagem"> <h1>Quero tirar minha dúvida </h1></div>
-              <a href="https://wa.link/rqg58u" target="_blank" class="enviar-btn">Enviar mensagem</a>
-            </div>
-          </div>
-        </div>
-    </section>
-      
-    
-    <!-- Banner -->      
-
-    <section class="Banner">
-
-        <div class="carousel-wrapper">
-            <span id="item-1"></span>
-            <span id="item-2"></span>
-            <span id="item-3"></span>
-            <div class="carousel-item item-1">
-              <a class="arrow arrow-prev" href="#item-3"></a>
-              <a class="arrow arrow-next" href="#item-2"></a>
-            </div>
-            
-            <div class="carousel-item item-2">
-              <a class="arrow arrow-next" href="#item-3"></a>
-            </div>
-            
-            <div class="carousel-item item-3">
-              <a class="arrow arrow-prev" href="#item-2"></a>
-              <a class="arrow arrow-next" href="#item-1"></a>
-            </div>
-          </div>
-
-    </section>
-
-    <!-- categorias icons -->
-
-    <section class="categorias">
-
-        <div class="diferencial">
-            <div class="btn">
-                <a href="#lancamento ">CONFIRA O LANÇAMENTO</a>
-            </div>
-            <div class="categoria-icons">
-                <nav class="card">
-                    <a href="categorias-sports.html"><img src="img/Sports.png" alt="sportsicon"></a>
-                    <h3>Sports</h3>
-                </nav>
-                                <nav class="card">
-                    <a href="categorias-casuais.html"><img src="img/Casuais.png" alt="casuaisicon"></a>
-                    <h3>Casuais</h3>
-                </nav>
-                <nav class="card">
-                    <a href="categorias-snkrs.html"><img src="img/SNKRS.png" alt="snkrsicon"></a>
-                    <h3>SNKRS</h3>
-                </nav>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- produtos em promoção -->
-
-    <section class="produtos">
-
-        <div class="container-produtos"> 
-            <nav class="grid-produto">
-                <a href="produto-esportivo5.html"> <img class="tenis-grid" src="img/esportivo5.jpg" alt="produtos" width="250" height="250"> </a> 
-                <h4> Tênis Nike Bio</h4>
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1000,00 </h5>
-                <h3> R$ 800,00</h3>
-            </nav>
-            <nav class="grid-produto">
-                <a href="produto-esportivo2.html"> <img class="tenis-grid" src="img/esportivo2.jpg" alt="produtos" width="250" height="250"> </a> 
-                <h4> Tênis Nike Bio</h4>
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1000,00 </h5>
-                <h3> R$ 800,00</h3>
-            </nav>
-            <nav class="grid-produto">
-                <a href="produto-esportivo3.html"> <img class="tenis-grid" src="img/esportivo3.jpg" alt="produtos" width="250" height="250"> </a> 
-                <h4> Tênis Nike Bio</h4>
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1000,00 </h5>
-                <h3> R$ 800,00</h3>
-            </nav>
-            <nav class="grid-produto">
-                <a href="produto-casuais3.html"> <img class="tenis-grid" src="img/casuais3.jpg" alt="produtos" width="250" height="250"> </a> 
-                <h4> Tênis Nike Bio</h4>
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1000,00 </h5>
-                <h3> R$ 800,00</h3>
-            </nav>
-            <nav class="grid-produto">
-                <a href="produto-snicker2.html"> <img class="tenis-grid"  src="img/snicker2.jpg" alt="produtos" width="250" height="250"> </a>
-                <h4> Nike Dunk Bio </h4> 
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 990,00 </h5>
-                <h3> R$ 700,00</h3>
-           </nav>
-           <nav class="grid-produto">
-                <a href="produto-snicker4.html"> <img class="tenis-grid"  src="img/snicker4.jpg" alt="produtos" width="250" height="250"> </a>
-                <h4> Nike Plus Vegan </h4> 
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1000,00 </h5>
-                <h3> R$ 800,00</h3>
-            </nav>
-            <nav class="grid-produto">
-                <a href="produto-snicker3.html"> <img class="tenis-grid"  src="img/snicker3.jpg" alt="produtos" width="250" height="250"> </a>
-                <h4> Nike Air Tree </h4> 
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1500,00 </h5>
-                <h3> R$ 1250,00</h3>
-            </nav>
-           <nav class="grid-produto">
-                <a href="produto-snicker1.html"> <img class="tenis-grid" src="img/snicker1.jpg" alt="produtos" width="250" height="250"> </a> 
-                <h4> Nike Jordan Bio Canadá </h4>
-                <img class="estrelas" src="img/estrelas.png" alt="estrelas">
-                <h5> R$ 1200,00 </h5>
-                <h3> R$ 900,00</h3>
-            </nav>
-        </div>
-        
-    </section>
-
-    <!-- tênis lançamento -->
-
-    <section class="lancamento">
-            <div id="lancamento"></div>
-
-            <div class="lancamento-container" >
-            <div class="lancamento-produto">  
-                <img src="img/foto tenis verde lançamento.png" alt="produto-lançamento"> 
-            </div>
-            <div class="lancamento-produto-2">  
-                <img src="img/banner-tenis-verde.jpg" alt="produto-lançamento"> 
-            </div> 
-            <div class="lacamento-text">
-                <h1> Tênis Nike Bio </h1>
-                <p>  O lançamento de um tênis sustentável é uma iniciativa relevante e que tem ganhado destaque nos últimos anos. Esse tipo de produto é produzido de forma consciente e utiliza materiais reciclados, biodegradáveis e/ou orgânicos
-                    em sua composição. Além disso, a produção do tênis é realizada de forma sustentável, com práticas que reduzem o
-                    consumo de água e energia e o controle do descarte de resíduos.
-                    A produção de tênis sustentáveis é uma excelente forma de contribuir para a preservação do meio ambiente e
-                    de incentivar o consumo consciente. Grandes marcas já têm investido nesse tipo de produto, e empresas menores 
-                    também têm se engajado nessa causa. Ao escolher produtos sustentáveis, as pessoas podem contribuir para a
-                    preservação do meio ambiente e para a construção de um futuro mais consciente e responsável.</p>
-                <button> <a href="PNikeVerde.html"> COMPRAR </a></button>
-            </div> 
-            </div>
-    </section>
-
-
-    <!-- rodapé -->
-
-    <section>
-
-    <div class="fundo-verde-rodape">
-    <div class="rodape-container">
-            <img src="img/retangulo verde.png" alt="Imagem" class="background-image">
-            <div class="content">
-            <h2> RECEBA NOVIDADES </h2>
-            <input type="email" placeholder="Digite seu e-mail">
-            <button> CADASTRE-SE </button>
-            </div>
-            <div class="dados-rodape">
-                <div class="social">
-                    <h1> Redes Sociais </h1> <br>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img src="img/icon face.png" alt="icon">
-                    </a>
-                    <a href="https://www.tiktok.com" target="_blank"> 
-                        <img src="img/icon tiktok.png" alt="icon" >
-                    </a>
-                    <a href="https://twitter.com/home" target="_blank"> 
-                        <img src="img/icon twitter.png" alt="icon" >
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank"> 
-                        <img src="img/icon insta.png" alt="icon" >
-                    </a>
-                    <a href="https://www.youtube.com" target="_blank"> 
-                        <img src="img/icon you.png" alt="icon" >
-                    </a> <br>
-                    <div class="bandeiras">
-                    <img src="img/bandeiras.png" alt="card" class="imagem-final" >
-                    </div>
-                </div>
-                <div class="info">
-                    <h1>    Informações </h1> <br>
-                    <a href="oquesomos-sobrenos.html"> O Que Somos </a> <br> <br>
-                    <a href="oquesomos-sobrenos.html"> Termos de Uso </a> <br> <br>
-                    <a href="lojas.html"> Lojas Físicas </a>
-                </div>
-                <div class="contatos">
-                    <h1> Contatos </h1> <br>
-                    <a href="mailto:joao.beseera@aluno.ifsp.edu.br" target="_blank"> 
-                        <img src="img/icon email.png" alt="icon"> outpolution@aluno.ifsp.edu.br
-                    </a> <br>
-                    <a href="tel:+12997215547"> 
-                        <img src="img/icon telefone.png" alt="icon"> +55 (12) 99721 - 5547 
-                    </a> <br> 
-                    <a href="https://api.whatsapp.com/send/?phone=5512997215547&text=Ola%20gostaria%20de%20tirar%20uma%20d%C3%BAvida.&type=phone_number&app_absent=0" target="_blank">
-                        <img src="img/icon zap.png" alt="icon"> Tire Dúvidas via WhatsApp 
-                    </a> <br> <br>
-                </div>          
-            </div> 
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    </div>
-
-    <div class="rodape">
-        <h5> © 2023, OutPolution. Todos os direitos reservados. OUT Comércio de Calçados Ltda. |
-             Bairro Indáia,  Caraguatatuba. SP  CEP: 00000-00 | CNPJ: 00.000.000/0000-00 | (99) 
-             99999-9999
-        </h5>
-    </div>
-
-
-
-    </section>
+  </div>
   
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Bread Basket</h4>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h4>Scrambled eggs</h4>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h4>Blueberry Pancakes</h4>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
 
-    <script src="js/script.js"></script>
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
 </body>
-
 </html>
